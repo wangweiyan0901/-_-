@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WWYTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,19 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    //窗口设置
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    //设置根控制器
+    self.window.rootViewController = [[WWYTabBarController alloc] init];
+    
+    //设置窗口
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 

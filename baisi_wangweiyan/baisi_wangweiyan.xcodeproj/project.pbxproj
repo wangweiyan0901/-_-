@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		2BE60E821D5F2BC1002AD1B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE60E811D5F2BC1002AD1B6 /* main.m */; };
 		2BE60E851D5F2BC1002AD1B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE60E841D5F2BC1002AD1B6 /* AppDelegate.m */; };
-		2BE60E881D5F2BC1002AD1B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE60E871D5F2BC1002AD1B6 /* ViewController.m */; };
-		2BE60E8B1D5F2BC1002AD1B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE60E891D5F2BC1002AD1B6 /* Main.storyboard */; };
 		2BE60E8D1D5F2BC1002AD1B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE60E8C1D5F2BC1002AD1B6 /* Assets.xcassets */; };
-		2BE60E901D5F2BC1002AD1B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE60E8E1D5F2BC1002AD1B6 /* LaunchScreen.storyboard */; };
+		2BE60E9D1D5F32FA002AD1B6 /* WWYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE60E9C1D5F32FA002AD1B6 /* WWYTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +18,10 @@
 		2BE60E811D5F2BC1002AD1B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2BE60E831D5F2BC1002AD1B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2BE60E841D5F2BC1002AD1B6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2BE60E861D5F2BC1002AD1B6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2BE60E871D5F2BC1002AD1B6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		2BE60E8A1D5F2BC1002AD1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BE60E8C1D5F2BC1002AD1B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2BE60E8F1D5F2BC1002AD1B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BE60E911D5F2BC1002AD1B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BE60E9B1D5F32FA002AD1B6 /* WWYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWYTabBarController.h; sourceTree = "<group>"; };
+		2BE60E9C1D5F32FA002AD1B6 /* WWYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWYTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +56,8 @@
 			children = (
 				2BE60E831D5F2BC1002AD1B6 /* AppDelegate.h */,
 				2BE60E841D5F2BC1002AD1B6 /* AppDelegate.m */,
-				2BE60E861D5F2BC1002AD1B6 /* ViewController.h */,
-				2BE60E871D5F2BC1002AD1B6 /* ViewController.m */,
-				2BE60E891D5F2BC1002AD1B6 /* Main.storyboard */,
-				2BE60E8C1D5F2BC1002AD1B6 /* Assets.xcassets */,
-				2BE60E8E1D5F2BC1002AD1B6 /* LaunchScreen.storyboard */,
+				2BE60E9B1D5F32FA002AD1B6 /* WWYTabBarController.h */,
+				2BE60E9C1D5F32FA002AD1B6 /* WWYTabBarController.m */,
 				2BE60E911D5F2BC1002AD1B6 /* Info.plist */,
 				2BE60E801D5F2BC1002AD1B6 /* Supporting Files */,
 			);
@@ -74,6 +67,7 @@
 		2BE60E801D5F2BC1002AD1B6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2BE60E8C1D5F2BC1002AD1B6 /* Assets.xcassets */,
 				2BE60E811D5F2BC1002AD1B6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -105,6 +99,7 @@
 		2BE60E751D5F2BC1002AD1B6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WWY;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = wangeweiyan;
 				TargetAttributes = {
@@ -136,9 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BE60E901D5F2BC1002AD1B6 /* LaunchScreen.storyboard in Resources */,
 				2BE60E8D1D5F2BC1002AD1B6 /* Assets.xcassets in Resources */,
-				2BE60E8B1D5F2BC1002AD1B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,32 +142,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BE60E881D5F2BC1002AD1B6 /* ViewController.m in Sources */,
+				2BE60E9D1D5F32FA002AD1B6 /* WWYTabBarController.m in Sources */,
 				2BE60E851D5F2BC1002AD1B6 /* AppDelegate.m in Sources */,
 				2BE60E821D5F2BC1002AD1B6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2BE60E891D5F2BC1002AD1B6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2BE60E8A1D5F2BC1002AD1B6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2BE60E8E1D5F2BC1002AD1B6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2BE60E8F1D5F2BC1002AD1B6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2BE60E921D5F2BC1002AD1B6 /* Debug */ = {
@@ -263,10 +237,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = baisi_wangweiyan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.wangweiyan.baisi-wangweiyan";
+				PRODUCT_BUNDLE_IDENTIFIER = "XMG.-1------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -274,10 +251,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = baisi_wangweiyan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "cn.wangweiyan.baisi-wangweiyan";
+				PRODUCT_BUNDLE_IDENTIFIER = "XMG.-1------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
